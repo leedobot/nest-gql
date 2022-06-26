@@ -1,0 +1,11 @@
+type User {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  fullName: String!
+}
+
+type Query {
+  allUsers: [User!]!
+  user(id:ID!): User
+}
